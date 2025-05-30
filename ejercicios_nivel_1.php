@@ -12,7 +12,7 @@ echo $double . "<br>";
 echo $str . "<br>";
 echo $bool . "<br>";
 
-const NOMBRE = "Antonia";
+define('NOMBRE', "Antonia");
 echo "<h1>" . NOMBRE . "</h1>";
 
 //Ejercicio 2
@@ -63,7 +63,7 @@ echo "<br>";
 echo $y * $y * $n * $m;
 echo "<br>";
 
-function calculadora($x, $y, $str)
+function calculadora(int|float $x, int|float $y, string $str): int|float
 {
     switch ($str) {
         case "+":
@@ -79,6 +79,7 @@ function calculadora($x, $y, $str)
             return $x / $y;
         default:
             echo "Ingrese un caracter válido";
+            return 0;
     }
 }
 echo calculadora(2, 3, "*");
@@ -86,7 +87,7 @@ echo calculadora(2, 3, "*");
 //Ejercicio 4
 echo "<h3> Ejercicio 4 </h3>";
 
-function contador($numSalto, $numTope = 10)
+function contador(int $numSalto, int $numTope = 10): void
 {
     $i = 0;
     while ($i <= $numTope) {
@@ -101,7 +102,7 @@ contador(2, 15);
 //Ejercicio 5
 echo "<h3> Ejercicio 5 </h3>";
 
-function verificarGrado($nota)
+function verificarGrado(int|float $nota): string
 {
     if ($nota < 0 || $nota > 10) {
         return "Nota inválida";
@@ -123,7 +124,7 @@ echo verificarGrado(7);
 //Ejercicio 6
 echo "<h3> Ejercicio 6 </h3>";
 
-function isBitten()
+function isBitten(): bool
 {
     return rand(0, 1) === 1;
 }
