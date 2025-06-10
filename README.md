@@ -1,43 +1,62 @@
-📘 Tema 2 - PHP Básico - Nivel 1
-Este repositorio contiene una serie de ejercicios básicos en PHP diseñados para poner en práctica los conceptos fundamentales del lenguaje. 
-Esta entrega se enfoca en: variables, condicionales, bucles, funciones, constantes y operaciones básicas.
+# 📘 Tema 2 - PHP Básico
 
-🚀 Tecnologías utilizadas
--PHP
--Visual Studio Code (o cualquier otro editor de texto)
--Navegador web moderno (Chrome, Firefox, Edge, etc.)
+## 📌 Descripción
 
-✅ Requisitos
-Antes de comenzar, asegúrate de tener instalado:
+Este repositorio contiene una serie de ejercicios en **PHP** diseñados para poner en práctica los conceptos fundamentales del lenguaje.
 
--PHP (preferiblemente versión 7.4 o superior)
--Visual Studio Code o cualquier otro editor de código
--Un navegador web actualizado
+### 🔹 Nivel 1
 
-📦 Instalación
+Ejercicios orientados a afianzar los conceptos básicos de PHP:
+
+- Variables y constantes
+- Condicionales
+- Bucles
+- Funciones simples
+- Operaciones aritméticas
+
+### 🔹 Nivel 2
+
+Ejercicios que incorporan una lógica más estructurada y organización en archivos separados:
+
+-Funciones simples
+-Separación entre lógica y presentación
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- PHP  
+- Visual Studio Code (u otro editor de texto)  
+- Navegador web moderno (Chrome, Firefox, Edge, etc.)
+
+---
+
+## ✅ Requisitos
+
+Antes de comenzar, asegurate de tener instalado:
+
+- 🐘 PHP (preferentemente versión 7.4 o superior)  
+- 🖥️ Visual Studio Code o cualquier otro editor de código  
+- 🌐 Un navegador web actualizado
+
+---
+
+## 📦 Instalación
 
 Clona este repositorio:
-git clone https://github.com/tu-usuario/tu-repositorio.git
-
+git clone <https://github.com/Antonia90/1.2-PHP-Basico.git>
 Accede al directorio del proyecto:
-cd tu-repositorio
+cd tema2_php_basico
 
-▶️ Ejecución
+## ▶️ Ejecución
+
 Para visualizar los ejercicios:
 
-Asegúrate de que el servidor PHP esté corriendo (opcional, recomendado):
+Servidor local:
+Inicia un servidor PHP desde la terminal:
+
 php -S localhost:8000
 
 Abre tu navegador y accede a:
-http://localhost:8000/ejercicios_nivel_1.php
 
-O simplemente abre el archivo ejercicios_nivel_1.php directamente en tu navegador (funciona para scripts simples).
-
-🧠 Objetivo
-Estos ejercicios están orientados al aprendizaje práctico de PHP. Son ideales para quienes están dando sus primeros pasos en el desarrollo web backend con este lenguaje.
-
-📁 Estructura del proyecto
-
-├── ejercicios_nivel_1.php
-├── README.md
-└── ...
+<http://localhost:8000/tema2_php_basico.php>
