@@ -7,8 +7,15 @@ require_once 'calculateCandyTotalCost.php';
 
 //**Nivel 2**
 //Ejercicio 1
+$inCents = false;
+$total = calculateTotalPaymentCall(10, $inCents);
 
-echo "El total a pagar es: " . calculateTotalPaymentCall(10) . " céntimos.<br>";
+echo "El total a pagar es: " . $total;
+if ($inCents) {
+    echo " céntimos.<br>";
+} else {
+    echo " euros. <br>";
+};
 
 //Ejercicio 2
 $totalCost = calculateGumTotalCost(1) + calculateCandyTotalCost(1) + calculateChocolateTotalCost(2);

@@ -1,17 +1,17 @@
 <?php
 
-function calculateTotalPaymentCall(int|float $duration): int|float
+function calculateTotalPaymentCall(int|float $duration, bool $inCents = true): int|float
 {
-    $minDuration = 3;
-    $minCost = 10;
-    $extraMinuteCost = 5;
+    define('MIN_DURATION', 3);
+    define('MIN_COST', 10);
+    define('EXTRA_MIN_COST', 5);
 
-    if ($duration <= $minDuration) {
-        return $minCost;
+    if ($duration <= MIN_DURATION) {
+        return MIN_COST;
     }
-    $extraMinutes = ceil($duration - $minDuration);
+    $extraMinutes = ceil($duration - MIN_DURATION);
 
-    $total = $minCost + ($extraMinutes * $extraMinuteCost);
+    $total = MIN_COST + ($extraMinutes * EXTRA_MIN_COST);
 
-    return ($total/100);
+    return $inCents ? $total : ($total / 100);
 }
