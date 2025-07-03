@@ -21,6 +21,12 @@ Ejercicios que incorporan una lógica más estructurada y organización en archi
 -Funciones simples
 -Separación entre lógica y presentación
 
+### 🔹 Nivel 3
+
+- Ejercicio 1
+
+La criba de Eratóstenes es un algoritmo pensado para encontrar números primos dentro de un intervalo dado. Basándote en la información del enlace adjunto, implementa la criba de Eratóstenes dentro de una función, de tal forma que podamos invocar la función para un número concreto.
+
 ---
 
 ## 🛠️ Tecnologías utilizadas
